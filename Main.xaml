@@ -1,0 +1,515 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="709.6,13552.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Persistence.Activities.Job</x:String>
+      <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Persistence.Activities.Delay</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Shared.Telemetry</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>UiPath.Testing.Activities.TestDataQueues.Enums</x:String>
+      <x:String>UiPath.Testing.Core</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Open HCL Sametime App" sap:VirtualizedContainerService.HintSize="720,13488" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="UserData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="657.6,75.2" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// We have added user credentials and commnunity Details in the test data sheet" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[UserData]" DisplayName="Read TestData Sheet" sap:VirtualizedContainerService.HintSize="657.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="TestData" WorkbookPath="TestDataSheet.xlsx" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: HCL Sametime Connect" sap:VirtualizedContainerService.HintSize="657.6,13132.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="IfNotOpen" ScopeGuid="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="624,12841.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Comment sap:VirtualizedContainerService.HintSize="561.6,94.4" sap2010:WorkflowViewState.IdRef="Comment_4" Text="// This activity is used to read the each row in the excel sheet  and saving into a variable object" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[UserData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="561.6,12592" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528,12404" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="DisplayName" />
+                      <Variable x:TypeArguments="x:String" Name="Placeholder" />
+                      <Variable x:TypeArguments="x:String" Name="ToolTipText" />
+                      <Variable x:TypeArguments="x:String" Name="UserStatus" />
+                      <Variable x:TypeArguments="x:String" Name="Receiver" />
+                      <Variable x:TypeArguments="x:String" Name="SendButtonText" />
+                      <Variable x:TypeArguments="x:String" Name="SendMessageText" />
+                      <Variable x:TypeArguments="ui:UiElement" Name="elements" />
+                      <Variable x:TypeArguments="x:String" Name="SendTesxMessage" />
+                      <Variable x:TypeArguments="x:String" Name="SendMessagefrom" />
+                      <Variable x:TypeArguments="x:String" Name="UserBStatus" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Community server'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="HardwareEvents" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Text="[CurrentRow(&quot;CommunityServer&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable ContentHash="xiZXHUGulkm_PwZBfoqKxA" DesignTimeRectangle="75, 284, 1843, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Type Into 'Community server''" FullSelectorArgument="&lt;wnd cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="2c2ae1a4-cc7e-4a34-b206-5ca5d3305c5f" InformativeScreenshot="a7c6387dd416b49e12627a38ec3cd0fa.png" IsResponsive="True" Reference="42JAyK02KUyuSgXtQjR2Cw/R4F4iW4lo0qjIrf4hOKYDw" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="75, 259, 126, 18" ElementType="Text" FriendlyName="'Type Into 'Community server''" FullSelectorArgument="&lt;wnd aaname='Community server:' cls='Static' title='&amp;amp;Community server:' /&gt;&lt;ctrl name='Community server:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Community server:' cls='Static' title='&amp;amp;Community server:' /&gt;&lt;ctrl name='Community server:' role='text' automationid='' check:text='Community server:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'User name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="HardwareEvents" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Text="[CurrentRow(&quot;UserA&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable ContentHash="T0Qt9RPk_EeUWUMgQp4GCw" CvElementArea="50, 379, 1880, 29" CvType="InputBox" DesignTimeRectangle="75, 381, 1843, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Type Into 'User name''" FullSelectorArgument="&lt;wnd cls='Edit' idx='2' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="9b686d5f-7ad5-4f88-bb9b-d8039ec3e795" InformativeScreenshot="fcd5ddc70c0c6275ecf312becf1e5acb.png" IsResponsive="True" Reference="42JAyK02KUyuSgXtQjR2Cw/mv0wrlxc00OqiC0gviBauw" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="73, 357, 75, 14" CvTextArgument="User name:" CvType="Text" DesignTimeRectangle="75, 356, 73, 19" ElementType="Text" FriendlyName="'Type Into 'User name''" FullSelectorArgument="&lt;wnd aaname='User name:' cls='Static' title='&amp;amp;User name:' /&gt;&lt;ctrl name='User name:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='User name:' cls='Static' title='&amp;amp;User name:' /&gt;&lt;ctrl name='User name:' role='text' automationid='' check:text='User name:' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '&amp;Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Text="[CurrentRow(&quot;Password&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable ContentHash="-HrGP-u9p0KxT46BCqgIow" CvElementArea="64, 442, 1860, 29" CvType="InputBox" DesignTimeRectangle="75, 445, 1843, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Type Into 'Password''" FullSelectorArgument="&lt;wnd cls='Edit' idx='3' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="f6e35abd-1613-4861-a831-5e0db41d0588" InformativeScreenshot="181c507a12752430f7d2012047a10b32.png" IsResponsive="True" Reference="42JAyK02KUyuSgXtQjR2Cw/bJffTOzN-ECNV5uzq_nt2g" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="73, 420, 67, 16" CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="75, 420, 66, 19" ElementType="Text" FriendlyName="'Type Into 'Password''" FullSelectorArgument="&lt;wnd aaname='Password:' cls='Static' title='&amp;amp;Password:' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Password:' cls='Static' title='&amp;amp;Password:' check:text='&amp;amp;Password:' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,75.2" sap2010:WorkflowViewState.IdRef="Comment_5" Text="// This activity is used to check if user want to select remember pasord option or not" />
+                    <If Condition="[CurrentRow(&quot;RememberPassword&quot;).ToString.Equals(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="484.8,430.4" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="To CHeck Remember Password option" sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Remember password'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CvTextArea="93, 485, 140, 17" CvTextArgument="Remember password" CvType="Text" DesignTimeRectangle="75, 484, 1843, 20" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Remember password'" FullSelectorArgument="&lt;wnd aaname='Remember password' cls='Button' title='&amp;amp;Remember password' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Remember password' cls='Button' title='&amp;amp;Remember password' check:fulltext='Remember password' /&gt;" Guid="1daae5c8-dc9b-4911-8044-01427e6353f1" InformativeScreenshot="d511fd638e06e08d6e9690d9a095aaee.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8" />
+                      </If.Else>
+                    </If>
+                    <uix:NSelectItem DisplayName="Select Item 'Select Item 'I am available''" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[CurrentRow(&quot;Status&quot;).ToString]" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="2">
+                          <x:String>I am available @ HCL Software</x:String>
+                          <x:String>I am available</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable ContentHash="d9Bwe3-OtkGZGRI9NNDXOw" CvTextArea="88, 670, 84, 16" CvTextArgument="am available" CvType="Text" DesignTimeRectangle="75, 666, 1842, 29" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Select Item 'I am available''" FullSelectorArgument="&lt;wnd cls='ComboBox' idx='2' /&gt;&lt;ctrl role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd cls='ComboBox' /&gt;&lt;ctrl role='combo box' automationid='' /&gt;" Guid="f46d26c8-66a9-4a22-86cd-b849d80acbe2" InformativeScreenshot="bda73f7f467f8fd6ab80a34b32096b98.png" Reference="42JAyK02KUyuSgXtQjR2Cw/XRZDDLuKt06IdudG-EPGmQ" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Log &amp;In''" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable ContentHash="G_Z1RnC8ykOc211ESwiaYg" CvElementArea="1801, 913, 115, 32" CvTextArea="1836, 921, 42, 18" CvTextArgument="LogIn" CvType="Button" DesignTimeRectangle="1801, 915, 115, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Click 'Log &amp;In''" FullSelectorArgument="&lt;wnd aaname='Log In' cls='Button' title='Log &amp;amp;In' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Log In' cls='Button' title='Log &amp;amp;In' check:text='Log &amp;amp;In' /&gt;" Guid="dc6d4f17-1ad0-40ed-9807-4efe1092d85f" InformativeScreenshot="65a540143cb2e3e346f372afa6fa5bad.png" Reference="42JAyK02KUyuSgXtQjR2Cw/AFFgs_3CMUeAVbgy_VR6qQ" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                    <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="484.8,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                    <uix:NGetText DisplayName="Get DisplayName" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" TextString="[DisplayName]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable ContentHash="92bHTYaSDEaSkSRYw2WBxw" CvTextArea="85, 103, 71, 13" CvType="AnyWordGroup" DesignTimeRectangle="88, 103, 1843, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Get DisplayName'" FullSelectorArgument="&lt;wnd cls='Static' title='adams555' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' /&gt;" Guid="698d2ca3-5729-48ed-8074-91a5ad5d0a48" InformativeScreenshot="fe504eb23110f83d4832e27acd918967.png" Reference="42JAyK02KUyuSgXtQjR2Cw/TLF-8ywEokiZbCM_ft3zWw" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams555' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;UserStatusIs starting&gt;&gt;&quot; +UserStatus]" />
+                    <uix:NGetText DisplayName="Get Text 'Find a person'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" TextString="[Placeholder]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable CvElementArea="54, 47, 1823, 32" CvType="InputBox" DesignTimeRectangle="59, 49, 1810, 30" DesignTimeScaleFactor="1.25" FriendlyName="'Find a person'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='57' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' /&gt;" Guid="01b3199f-6762-4a54-8ecb-4c1b0bfee063" InformativeScreenshot="7732b922dbecec4ea2fed39874c1267a.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams555' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,75.2" sap2010:WorkflowViewState.IdRef="Comment_6" Text="// Added verification steps to check user status and display name once user logged in" />
+                    <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[DisplayName.Equals(CurrentRow(&quot;UserA&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;PlaceholderValueIs---&gt;&quot; +Placeholder]" />
+                    <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[Placeholder.Equals(&quot;Find a person&quot;)]" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                    <uix:NGetText DisplayName="Get Status" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" TextString="[UserStatus]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable ContentHash="IIM2TGIAIkCw2Nik13AIuw" CvTextArea="123, 146, 75, 13" CvType="AnyWordGroup" DesignTimeRectangle="119, 143, 1746, 20" DesignTimeScaleFactor="1.25" FriendlyName="'Get User Status'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='11' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' /&gt;" Guid="38f26f3f-2527-4f33-82ea-4ddd93d825e4" InformativeScreenshot="fff8521ff465e767cd2ad3177ea2d2a4.png" Reference="42JAyK02KUyuSgXtQjR2Cw/BiZa15OmkUi0WuT6Jndk4w" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams555' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[UserStatus.Equals(CurrentRow(&quot;Status&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_4" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,75.2" sap2010:WorkflowViewState.IdRef="Comment_7" Text="// This activity is searcing for a user and starting a p2p chat " />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type Into 'Find a person''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Text="[CurrentRow(&quot;UserB&quot;).ToString]" Timeout="30" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable ContentHash="5r4SrOTbQUO_pOWvN85qWA" CvElementArea="56, 47, 1821, 33" CvType="InputBox" DesignTimeRectangle="59, 49, 1810, 30" DesignTimeScaleFactor="1.25" FriendlyName="'Type Into 'Find a person''" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='46' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' check:fulltext='Find a person' /&gt;" Guid="81a1e855-e482-40aa-8c23-272f2a03a8b2" InformativeScreenshot="67f044809ce64ac516cf53ba2a7da774.png" Reference="42JAyK02KUyuSgXtQjR2Cw/n2kihALKW0uTEqdoREPM3A" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams403' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Searched UserB" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Timeout="30" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable Accuracy="0.82" CvTextArea="28, 10, 211, 15" CvTextArgument="Search Directories for adams101" CvType="Text" DesignTimeRectangle="-10, 0, 274, 32" DesignTimeScaleFactor="1.25" FriendlyName="'client'" FullSelectorArgument="&lt;ctrl role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl role='client' automationid='' /&gt;" Guid="252abd61-85cf-4921-b12b-f869b8c04c0b" ImageBase64="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" InformativeScreenshot="de4e8aee617bdd536fc22977857f983e.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_WindowShadow0' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Perform Enter" sap:VirtualizedContainerService.HintSize="484.8,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,94.4" sap2010:WorkflowViewState.IdRef="Comment_3" Text="// Once the new chat window opned we need to verify user details ,staus and start sending the messages" />
+                    <uix:NGetText DisplayName="Get displayName of UserB" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" TextString="[Receiver]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable CvTextArea="42, 11, 129, 17" CvType="AnyWordGroup" DesignTimeRectangle="44, 11, 128, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'sametime.exe adams444'" Guid="8f1d3acd-8e9f-439f-a099-c53208c10919" InformativeScreenshot="f020a35958c285b311f108222b4ce11a.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams444 [started: 7:37:04 PM]' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="17, 6, 23, 23" CvType="Icon" DesignTimeRectangle="10, 10, 27, 27" FriendlyName="'System'" FullSelectorArgument="&lt;ctrl automationid='MenuBar' /&gt;&lt;ctrl name='System' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' /&gt;&lt;ctrl name='System' role='menu item' automationid='' check:text='System' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASPSURBVFhH7dR7TJVlHMBxh1zkJgfOOe+5c9ClCSbIRThHQeWqIYYgDgk3Fy2btdlCMEDR40xFwVsKgWGQmVo2QTO1sNYcGK4iLVNb1mZhmVhKGGZLvv3QU9m/B2d/5LN99uzdztl3z3v5DfLx8WHKlCn8F8ul+B89PfRe7qLn0kWudf3lB6fvnS6ITqfvnL6V/5zntyud3Lx+1bV4d1sbnzVuo7V6Pe0vbRT9eyXt9RViJe3bVgiHWCJKxSKxUBRytO4pzjWV8OvZt12Lf1JfT1HWDJJjokgdb3ey/Zs9ltS4aCG/6RcbSeq4SJKiotk4P5GvWja7EO/ro23LFrLsNtQaDSazBbM5+A5WTCYrOsWATqMIHTqtXnY9ilpPQMBwimfFcOrgOtfix16s4eG4OLxVKvRGIwajCb3BhFZvJEirQy1Cho9k3PiJxMUnEmNLIFrYJqagDLOzcHY8nx9wJS6rva6WdLsd36AgObkZi8WMwWRGozcQEBgop9YxdXo2i1dtYMmaFyhaVkGRYw2O9XVEp86lZG4KJ/ZV3Z24WeIaObVB0WPRaBkbNprSFVW8euADXm5qoXbXWzQ0HWHHoTYiE/MoyovnRHPlwOJ+EjeYTPioFUKHWSlJT6Q+L4vyaRkkpmeSlpnDzPzHWLp2MzsPt1FeVU3wiHAKZ0XwxcH1Az+5YjAy2FdDgT2MI8W5tJYWUJKagl5ePq08hoTktFvxxv3vk5k7B5XaSOHMMZw+vHEAcfm8vFSBBClGAoMUGudE8fXqHJoXZJM6ajTuHh7y/IPInfsEmxreYG3tdkY8GIqXt5bCnLGceWfTwOJu/oEEakwkhBk5sTySb5ZPYlVGDIYAHaohnjwUHoFjXQ0NzUd4urgcfz9/BnvoJR4jcRdPfnzr7ds+yEuNWW2mIkvLxdoHOF46mucSR2G3hpAx0kL+jCyWV1azsrqRvIIn0SoK7l5y2wcS/7C2jozY8Vh1Kh5PUnO20ovrDQF0bQjm02URtJRO4uiCdHInxxNniyfGnkBEVAwWqxVPn2B54ca5GO+DozV1ZE+wkzzGj60Ffpys8OTU896cXKrQ4QjlmGMCe+YlEjtqpAwfM0YZQsHBMv2Ep59V4rEDjCfYmBDmR+kjKhyzVJTLXj5dwZEVwuLsUPITwrDIZ9g/7fQ6HQaDAaMMIg/fEJ6V+GnX4n201tQwzRaLKmgoVpMBs86Iycksw8YoAmW2q+W6f+QqetMtWp0Z9yEhPDNTZvshV75zib+3roq0iHDcPL1x81Xj5q3BzUcrlH/46vH0N+A11ChMeA41yy234OY+nPnTwuloXu3aC3du9y62zp/HouzplM3Opix3huyZIoOyvHQxVaRRlp/C4vxkMVlMpOzRBIpzbOxdOpULrXWuxX85c4YvW97l4/1NdBzcJ/r3veJNsYeOQ6+L3WInHYdfEzvEdrl+hY8ObOP8sZ30dna4Fr/Z28uN7m56r17h+t9+dvrptu7Ld+hyuiT/+ZHfe7rou3HNtfjdWvfjzst7u+7HnZf3dv3P40lJSXR2dt5jnfwJX2PMU+pPaiIAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;UserB -&gt;&gt;&gt;&quot; +Receiver]" />
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,75.2" sap2010:WorkflowViewState.IdRef="Comment_8" Text="// Add a check that USerB screen loaded properly" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,280.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[Receiver.Contains(CurrentRow(&quot;UserB&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_5" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="title" DisplayName="Get Attribute 'User is offline'" sap:VirtualizedContainerService.HintSize="484.8,208" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[UserBStatus]" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NGetAttributeGeneric.Target>
+                        <uix:TargetAnchorable CvTextArea="120, 160, 86, 15" CvTextArgument="User is offine" CvType="Text" DesignTimeRectangle="123, 160, 563, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'User is offline'" FullSelectorArgument="&lt;wnd cls='Static' title='User is offline' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='User is offline' check:text='User is offline' /&gt;" Guid="f83baa58-a484-4ed3-8699-d59b5a1cc14a" InformativeScreenshot="b4e962d699ff95ecb72a732e2eecb75c.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams777 [started: 3:35:10 PM]' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetAttributeGeneric.Target>
+                    </uix:NGetAttributeGeneric>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;UserB status is -&gt;&quot; +UserBStatus]" />
+                    <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[UserBStatus.Equals(&quot;User is offline&quot;)]" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_6" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,75.2" sap2010:WorkflowViewState.IdRef="Comment_9" Text="// Now start Sending a message from UserA to User B" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Find a person'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="57, 47, 1816, 33" CvType="InputBox" DesignTimeRectangle="65, 49, 1804, 30" DesignTimeScaleFactor="1.25" FriendlyName="'Find a person'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='9' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' check:text='Find a person' /&gt;" Guid="6a3c7f5a-9257-443d-9ecd-13f7afe6df87" InformativeScreenshot="1d1d3133dbc528324a47dc5faa2b5b6e.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams333 [started: 10:21:54 AM]' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="484.8,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on input field" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="295, 619, 441, 55" DesignTimeScaleFactor="1.25" FriendlyName="'Type your text'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='59' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' check:fulltext='Type your text' /&gt;" Guid="e806b30e-13c7-4cf6-9424-3e9bf8a97808" InformativeScreenshot="9ef61089fdd0b9edb1116100065729d6.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams777 [started: 3:12:18 PM]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,56" sap2010:WorkflowViewState.IdRef="Comment_10" Text="// Verify Send Button is present" />
+                    <uix:NGetText DisplayName="Get Text 'Send'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" TextString="[SendButtonText]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable CvTextArea="762, 621, 38, 15" CvType="AnyWordGroup" DesignTimeRectangle="739, 619, 76, 24" DesignTimeScaleFactor="1.25" FriendlyName="'Send'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='58' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' /&gt;" Guid="8e0efe5f-435d-46c3-9e57-5231ed8a5962" InformativeScreenshot="f66332e3dd5bbde0a20cafda3c745f2b.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams777 [started: 3:12:18 PM]' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[&quot;SendButtonText is -&gt;&gt;&quot; +SendButtonText]" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type your text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Text="[&quot;Hi from this side UserA --&gt;&quot; + CurrentRow(&quot;UserA&quot;).ToString + &quot; &quot; + Guid.NewGuid().ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="295, 619, 441, 55" DesignTimeScaleFactor="1.25" FriendlyName="'Type your text'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='59' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' check:fulltext='Type your text' /&gt;" Guid="96688556-72fe-4e45-9d7c-2af4ab24ea5b" InformativeScreenshot="1e908df3c45dafb24963835cf68fce31.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams777 [started: 3:12:18 PM]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,75.2" sap2010:WorkflowViewState.IdRef="Comment_11" Text="// Send button is not working in automation hence using keybaord shortcuts" />
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="484.8,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,56" sap2010:WorkflowViewState.IdRef="Comment_12" Text="// Now verify that message is sent to UserB" />
+                    <uix:NGetText DisplayName="Get Text 'adams555'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" TextString="[SendTesxMessage]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable ContentHash="Mqcap-YTREKpM-N3L4wvQg" CvTextArea="321, 315, 344, 17" CvTextArgument="Hi from this side UserA --&gt;adams502 70fa99b4-" CvType="Text" DesignTimeRectangle="321, 315, 343, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Get send and received message'" Guid="c834577b-e3b0-41c4-9f55-0be34b4e6829" InformativeScreenshot="fcdfb451d16830aed3c269fcca0c78a5.png" Reference="42JAyK02KUyuSgXtQjR2Cw/jrXltvMLokuviC6-MqEGIA" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams502/pnp-hcl [started: 6:49:07 PM]' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[&quot;Send Message ---&gt;&quot;+SendTesxMessage]" />
+                    <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[SendTesxMessage.Contains(&quot;Hi from this side UserA&quot;)]" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_7" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="484.8,75.2" sap2010:WorkflowViewState.IdRef="Comment_13" Text="// Now login with UserB and validate the message is received" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="772, 8, 22, 22" CvType="CloseButton" DesignTimeRectangle="755, 1, 60, 37" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="352aa640-16e1-44a0-a892-43ea3af90897" InformativeScreenshot="1971d9c378c3d6f1416f68be8562e99b.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams405 [started: 5:37:53 PM]' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SWT_Window0'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="1908, 52, 17, 20" CvType="ArrowButton" DesignTimeRectangle="1909, 39, 16, 50" DesignTimeScaleFactor="1.25" FriendlyName="'SWT_Window0'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='41' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' /&gt;" Guid="bc363751-2ee9-4d42-a5ee-1b1f0408840d" InformativeScreenshot="854f92e97fbcc651409197c9a2b571a1.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams555' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Exit'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="81c4d366-2b7f-49e3-83df-000728f4f4bf" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="41, 498, 26, 16" CvTextArgument="Exit" CvType="Text" DesignTimeRectangle="4, 494, 221, 27" DesignTimeScaleFactor="1.25" FriendlyName="'Exit'" FullSelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='200' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='200' role='menu item' check:text='Exit' /&gt;" Guid="45875da8-3ff7-4ee6-b34a-f35b951e21e4" InformativeScreenshot="c102ca605361cf6e172b0ec01c4d54f5.png" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: HCL Sametime Connect" sap:VirtualizedContainerService.HintSize="484.8,3453.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="bf7f359c-6706-4dbd-aad9-ed3537fea62c" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,3162.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="UserBDisplayName" />
+                              <Variable x:TypeArguments="x:String" Name="UserBStatusAfterLogin" />
+                              <Variable x:TypeArguments="x:String" Name="messageRcvdByuserB" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_3" />
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName=" 'Type Into 'Community server''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" Text="[CurrentRow(&quot;CommunityServer&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable ContentHash="xiZXHUGulkm_PwZBfoqKxA" DesignTimeRectangle="75, 284, 1843, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Type Into 'Community server''" FullSelectorArgument="&lt;wnd cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="2c2ae1a4-cc7e-4a34-b206-5ca5d3305c5f" InformativeScreenshot="a7c6387dd416b49e12627a38ec3cd0fa.png" IsResponsive="True" Reference="42JAyK02KUyuSgXtQjR2Cw/R4F4iW4lo0qjIrf4hOKYDw" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="75, 259, 126, 18" ElementType="Text" FriendlyName="'Type Into 'Community server''" FullSelectorArgument="&lt;wnd aaname='Community server:' cls='Static' title='&amp;amp;Community server:' /&gt;&lt;ctrl name='Community server:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Community server:' cls='Static' title='&amp;amp;Community server:' /&gt;&lt;ctrl name='Community server:' role='text' automationid='' check:text='Community server:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="'Type Into 'User name''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" Text="[CurrentRow(&quot;UserB&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable ContentHash="T0Qt9RPk_EeUWUMgQp4GCw" CvElementArea="50, 379, 1880, 29" CvType="InputBox" DesignTimeRectangle="75, 381, 1843, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Type Into 'User name''" FullSelectorArgument="&lt;wnd cls='Edit' idx='2' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="9b686d5f-7ad5-4f88-bb9b-d8039ec3e795" InformativeScreenshot="fcd5ddc70c0c6275ecf312becf1e5acb.png" IsResponsive="True" Reference="42JAyK02KUyuSgXtQjR2Cw/mv0wrlxc00OqiC0gviBauw" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="73, 357, 75, 14" CvTextArgument="User name:" CvType="Text" DesignTimeRectangle="75, 356, 73, 19" ElementType="Text" FriendlyName="'Type Into 'User name''" FullSelectorArgument="&lt;wnd aaname='User name:' cls='Static' title='&amp;amp;User name:' /&gt;&lt;ctrl name='User name:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='User name:' cls='Static' title='&amp;amp;User name:' /&gt;&lt;ctrl name='User name:' role='text' automationid='' check:text='User name:' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type Into 'Password''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" Text="[CurrentRow(&quot;Password&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable ContentHash="-HrGP-u9p0KxT46BCqgIow" CvElementArea="64, 442, 1860, 29" CvType="InputBox" DesignTimeRectangle="75, 445, 1843, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Type Into 'Password''" FullSelectorArgument="&lt;wnd cls='Edit' idx='3' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="f6e35abd-1613-4861-a831-5e0db41d0588" InformativeScreenshot="181c507a12752430f7d2012047a10b32.png" IsResponsive="True" Reference="42JAyK02KUyuSgXtQjR2Cw/bJffTOzN-ECNV5uzq_nt2g" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="73, 420, 67, 16" CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="75, 420, 66, 19" ElementType="Text" FriendlyName="'Type Into 'Password''" FullSelectorArgument="&lt;wnd aaname='Password:' cls='Static' title='&amp;amp;Password:' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Password:' cls='Static' title='&amp;amp;Password:' check:text='&amp;amp;Password:' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NSelectItem DisplayName="Select Item 'Select Item 'I am available''" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="I am available" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="2">
+                                  <x:String>I am available @ HCL Software</x:String>
+                                  <x:String>I am available</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable ContentHash="d9Bwe3-OtkGZGRI9NNDXOw" CvTextArea="88, 670, 84, 16" CvTextArgument="am available" CvType="Text" DesignTimeRectangle="75, 666, 1842, 29" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Select Item 'I am available''" FullSelectorArgument="&lt;wnd cls='ComboBox' idx='2' /&gt;&lt;ctrl role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd cls='ComboBox' /&gt;&lt;ctrl role='combo box' automationid='' /&gt;" Guid="f46d26c8-66a9-4a22-86cd-b849d80acbe2" InformativeScreenshot="bda73f7f467f8fd6ab80a34b32096b98.png" Reference="42JAyK02KUyuSgXtQjR2Cw/XRZDDLuKt06IdudG-EPGmQ" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Log &amp;In''" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable ContentHash="G_Z1RnC8ykOc211ESwiaYg" CvElementArea="1801, 913, 115, 32" CvTextArea="1836, 921, 42, 18" CvTextArgument="LogIn" CvType="Button" DesignTimeRectangle="1801, 915, 115, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Click 'Log &amp;In''" FullSelectorArgument="&lt;wnd aaname='Log In' cls='Button' title='Log &amp;amp;In' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Log In' cls='Button' title='Log &amp;amp;In' check:text='Log &amp;amp;In' /&gt;" Guid="dc6d4f17-1ad0-40ed-9807-4efe1092d85f" InformativeScreenshot="65a540143cb2e3e346f372afa6fa5bad.png" Reference="42JAyK02KUyuSgXtQjR2Cw/AFFgs_3CMUeAVbgy_VR6qQ" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                            <uix:NGetText DisplayName="Get Text 'Get DisplayName'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" TextString="[UserBDisplayName]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable ContentHash="92bHTYaSDEaSkSRYw2WBxw" CvTextArea="85, 103, 71, 13" CvType="AnyWordGroup" DesignTimeRectangle="88, 103, 1843, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Get DisplayName'" FullSelectorArgument="&lt;wnd cls='Static' title='adams555' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' /&gt;" Guid="698d2ca3-5729-48ed-8074-91a5ad5d0a48" InformativeScreenshot="fe504eb23110f83d4832e27acd918967.png" Reference="42JAyK02KUyuSgXtQjR2Cw/TLF-8ywEokiZbCM_ft3zWw" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams555' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[UserBDisplayName.Equals(CurrentRow(&quot;UserB&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_8" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                            <uix:NGetText DisplayName="Get Text 'Get User Status'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" TextString="[UserBStatusAfterLogin]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable ContentHash="IIM2TGIAIkCw2Nik13AIuw" CvTextArea="123, 146, 75, 13" CvType="AnyWordGroup" DesignTimeRectangle="119, 143, 1746, 20" DesignTimeScaleFactor="1.25" FriendlyName="'Get User Status'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='11' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' /&gt;" Guid="38f26f3f-2527-4f33-82ea-4ddd93d825e4" InformativeScreenshot="fff8521ff465e767cd2ad3177ea2d2a4.png" Reference="42JAyK02KUyuSgXtQjR2Cw/BiZa15OmkUi0WuT6Jndk4w" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams555' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[UserBStatusAfterLogin.Equals(CurrentRow(&quot;Status&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_9" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type Into 'Find a person''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" Text="[CurrentRow(&quot;UserA&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable ContentHash="5r4SrOTbQUO_pOWvN85qWA" CvElementArea="56, 47, 1821, 33" CvType="InputBox" DesignTimeRectangle="59, 49, 1810, 30" DesignTimeScaleFactor="1.25" FriendlyName="'Type Into 'Find a person''" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='46' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' check:fulltext='Find a person' /&gt;" Guid="81a1e855-e482-40aa-8c23-272f2a03a8b2" InformativeScreenshot="67f044809ce64ac516cf53ba2a7da774.png" Reference="42JAyK02KUyuSgXtQjR2Cw/n2kihALKW0uTEqdoREPM3A" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams403' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="387.2,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                            <uix:NGetText DisplayName="Get Text 'Get send and received message'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="bf7f359c-6706-4dbd-aad9-ed3537fea62c" TextString="[messageRcvdByuserB]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable ContentHash="Mqcap-YTREKpM-N3L4wvQg" CvTextArea="321, 315, 344, 17" CvTextArgument="Hi from this side UserA --&gt;adams502 70fa99b4-" CvType="Text" DesignTimeRectangle="321, 315, 343, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Get send and received message'" Guid="c834577b-e3b0-41c4-9f55-0be34b4e6829" InformativeScreenshot="fcdfb451d16830aed3c269fcca0c78a5.png" Reference="42JAyK02KUyuSgXtQjR2Cw/jrXltvMLokuviC6-MqEGIA" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams502/pnp-hcl [started: 6:49:07 PM]' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[&quot;messageRcvdByuserB--&gt;&quot; +messageRcvdByuserB]" />
+                            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[messageRcvdByuserB.Contains(&quot;Hi from this side UserA&quot;)]" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_10" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-10, -10, 1940, 999" FilePath="C:\Program Files (x86)\HCL\Sametime Connect\rcp\rcplauncher.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATrSURBVFhHzZdZTFRnGIZHBNmZfTlnVlkGUZBlWCwu2FTSlCWISxCslsEC1WhE1OKaVtSpIDjsc8QFtUoVC26Nra22SZs27X3T23rRNL1oetPLXrx9z2GsJVACE5RePDlzzvlP/uf/vu9fRgVgXpny4cvk+c3hw9VoPT4G37EAfAcl+JoknNlNGiS01Ulo3062SDi7kVRI6CiR0FlMiiScW0nyJfizSYaErlSSJKHbIaFHIAYJfWoJAzEBdC8aQ1tY9WSBEydGu8pKUJaVgdpXcomH5JAs1BZmkuUknSwNsoSkkhTUrkwmSSSRuIiTOFC7yk6sRCQCyjwCujZpge4Fo5MFTp8aKM3MhCpsIVQa3ThqfRBDECMxBTEHsQQRiDhOgjWILYidONjbYpR6zEBANTBZ4NRJqXZFATvWwGazvRBUCYzMaiPQr5LmVMAqihAECxGmgVGKZ1pehIDZZFSwmM1TYjaZIFJigXrxHAvY7dCqE1BcWoG9R1vRuO8QGptaJtBAdu4/jD0t70GTlI8tnti5EzDo9XA4HGgPXMPNR9/h0uijSVwkI09+gK/3EiKYgq0FmtAE7ES0WqG3CNBZLNAxtFEx0SjfUIUbD79BYPg+uadc+2/cRc/VjxX6PhxTRMoqN7O3eHjXmEIXMAkikh1OuF0uJLHw0pOTcdTnR+DmJ/Bfugn/5VvoIh2D19E9NKIIDI48RKv/PFz8RhUlhFYDdrsNUQYTNuSk4+em7filaSd+O3AA997chqy8AizL9iDbk4fs3Hy4U5egYnMN+q/f5ejv4NqDr7Bpay0S4mJDnwUCQx+uM+KJtxjw7wJO7gPO+rC/aC1UTINep4PRoOdVg+hFESy6oxi6+xgXbn+KzovDSHG7odNqQl8HwrVmrFmWiL9ay4FTNcAHu/B0rxeCaIOGtSCnR26nTohjJPLHa+GjB7hy7wl27G5GfGyM8j4kAXn0EToBl6uWA+feAN6vAM54ceL1QrblLGB65HaiKECrUbPD/bh6/0ulELuv3EZWTi4jow1dQG2yIjvFjj+PZ3PkqwFfCf5oKUd6koujF/5pZ2AK0tLT0XlhmKO/j8tjn+Od5kOcqjplJZTbzFpALj55U/FvcAJdacy9hzWwDl0VOVjItIjWZ+3sDHM0tu7YqYRdHr2cf0/+CkRHRijvZy0g5zXBaGeIrfj1iIUCLhZeBn4/lsd33NkijYpEmJY7Y2Q0bEluSMz9rS++x9Cdxxj+7Fs0HWlVpp+8HM9aQPkg1ommdXp+EMPwU6IjGU8PLoWvLA09lZnoXZ+HvvWFkMpWoqWyHBvrd6Pa26BQU9eIt/ccQEHhKpiMxtkJyKMP0ziVAvupJRzoDWPhcQn1icRNkRxSBLSVMCpV/F2POh5eVDGxSsEpaLXKUv0s/DMS8MoCas7XeBdy3QJ+fDcC6OPrdtK2iBI6RsJOiVTgNIuydRU7L8fX9a9BYxJgMFs4G8QJWDmLZiywrYACcVo0F8vHJj4eJoNEIudJgEIDlOijRO9SXgt4X4y3CtMoPp7n6ZiZAFPQ+KoezSVaNBTpx1n7L4rMaFgjEgfvE+EtTFZmi0l8PtL/YmYpoECE1slIcPNgKibC51zPx895PPPFy+dAC8zs3BlckKZjxkU41cdzwf9cYN6P5fP+x2Te/5rNE1M+fHlA9TfYUC5k88/ymAAAAABJRU5ErkJggg==" InformativeScreenshot="848844a4bfba7fb793f0663e796ef916.png" Selector="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" Title="HCL Sametime Connect" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-10, -10, 1940, 999" FilePath="C:\Program Files (x86)\HCL\Sametime Connect\rcp\rcplauncher.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATrSURBVFhHzZdZTFRnGIZHBNmZfTlnVlkGUZBlWCwu2FTSlCWISxCslsEC1WhE1OKaVtSpIDjsc8QFtUoVC26Nra22SZs27X3T23rRNL1oetPLXrx9z2GsJVACE5RePDlzzvlP/uf/vu9fRgVgXpny4cvk+c3hw9VoPT4G37EAfAcl+JoknNlNGiS01Ulo3062SDi7kVRI6CiR0FlMiiScW0nyJfizSYaErlSSJKHbIaFHIAYJfWoJAzEBdC8aQ1tY9WSBEydGu8pKUJaVgdpXcomH5JAs1BZmkuUknSwNsoSkkhTUrkwmSSSRuIiTOFC7yk6sRCQCyjwCujZpge4Fo5MFTp8aKM3MhCpsIVQa3ThqfRBDECMxBTEHsQQRiDhOgjWILYidONjbYpR6zEBANTBZ4NRJqXZFATvWwGazvRBUCYzMaiPQr5LmVMAqihAECxGmgVGKZ1pehIDZZFSwmM1TYjaZIFJigXrxHAvY7dCqE1BcWoG9R1vRuO8QGptaJtBAdu4/jD0t70GTlI8tnti5EzDo9XA4HGgPXMPNR9/h0uijSVwkI09+gK/3EiKYgq0FmtAE7ES0WqG3CNBZLNAxtFEx0SjfUIUbD79BYPg+uadc+2/cRc/VjxX6PhxTRMoqN7O3eHjXmEIXMAkikh1OuF0uJLHw0pOTcdTnR+DmJ/Bfugn/5VvoIh2D19E9NKIIDI48RKv/PFz8RhUlhFYDdrsNUQYTNuSk4+em7filaSd+O3AA997chqy8AizL9iDbk4fs3Hy4U5egYnMN+q/f5ejv4NqDr7Bpay0S4mJDnwUCQx+uM+KJtxjw7wJO7gPO+rC/aC1UTINep4PRoOdVg+hFESy6oxi6+xgXbn+KzovDSHG7odNqQl8HwrVmrFmWiL9ay4FTNcAHu/B0rxeCaIOGtSCnR26nTohjJPLHa+GjB7hy7wl27G5GfGyM8j4kAXn0EToBl6uWA+feAN6vAM54ceL1QrblLGB65HaiKECrUbPD/bh6/0ulELuv3EZWTi4jow1dQG2yIjvFjj+PZ3PkqwFfCf5oKUd6koujF/5pZ2AK0tLT0XlhmKO/j8tjn+Od5kOcqjplJZTbzFpALj55U/FvcAJdacy9hzWwDl0VOVjItIjWZ+3sDHM0tu7YqYRdHr2cf0/+CkRHRijvZy0g5zXBaGeIrfj1iIUCLhZeBn4/lsd33NkijYpEmJY7Y2Q0bEluSMz9rS++x9Cdxxj+7Fs0HWlVpp+8HM9aQPkg1ommdXp+EMPwU6IjGU8PLoWvLA09lZnoXZ+HvvWFkMpWoqWyHBvrd6Pa26BQU9eIt/ccQEHhKpiMxtkJyKMP0ziVAvupJRzoDWPhcQn1icRNkRxSBLSVMCpV/F2POh5eVDGxSsEpaLXKUv0s/DMS8MoCas7XeBdy3QJ+fDcC6OPrdtK2iBI6RsJOiVTgNIuydRU7L8fX9a9BYxJgMFs4G8QJWDmLZiywrYACcVo0F8vHJj4eJoNEIudJgEIDlOijRO9SXgt4X4y3CtMoPp7n6ZiZAFPQ+KoezSVaNBTpx1n7L4rMaFgjEgfvE+EtTFZmi0l8PtL/YmYpoECE1slIcPNgKibC51zPx895PPPFy+dAC8zs3BlckKZjxkU41cdzwf9cYN6P5fP+x2Te/5rNE1M+fHlA9TfYUC5k88/ymAAAAABJRU5ErkJggg==" InformativeScreenshot="8b8d284228c4b2abbf7231f1eebed28a.png" Selector="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" Title="HCL Sametime Connect" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

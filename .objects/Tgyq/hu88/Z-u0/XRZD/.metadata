@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Select Item 'I am available'",
+  "Description": "Select Item 'I am available'",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "XRZDDLuKt06IdudG-EPGmQ",
+  "Reference": "42JAyK02KUyuSgXtQjR2Cw/XRZDDLuKt06IdudG-EPGmQ",
+  "ParentRef": "42JAyK02KUyuSgXtQjR2Cw/Z-u0o12CKUe8JQwZ2eKbcA",
+  "Created": "2023-11-30T12:39:01.4096386Z",
+  "Updated": "2023-11-30T12:39:01.4096386Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

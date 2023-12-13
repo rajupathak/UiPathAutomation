@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Get send and received message",
+  "Description": "Get send and received message",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "jrXltvMLokuviC6-MqEGIA",
+  "Reference": "42JAyK02KUyuSgXtQjR2Cw/jrXltvMLokuviC6-MqEGIA",
+  "ParentRef": "42JAyK02KUyuSgXtQjR2Cw/Z-u0o12CKUe8JQwZ2eKbcA",
+  "Created": "2023-11-30T12:58:24.9337127Z",
+  "Updated": "2023-11-30T12:58:24.9337127Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

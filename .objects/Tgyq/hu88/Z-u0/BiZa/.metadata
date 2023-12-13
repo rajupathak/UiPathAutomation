@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Get User Status",
+  "Description": "Get User Status",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "BiZa15OmkUi0WuT6Jndk4w",
+  "Reference": "42JAyK02KUyuSgXtQjR2Cw/BiZa15OmkUi0WuT6Jndk4w",
+  "ParentRef": "42JAyK02KUyuSgXtQjR2Cw/Z-u0o12CKUe8JQwZ2eKbcA",
+  "Created": "2023-11-30T12:54:49.5405294Z",
+  "Updated": "2023-11-30T12:54:49.5405294Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

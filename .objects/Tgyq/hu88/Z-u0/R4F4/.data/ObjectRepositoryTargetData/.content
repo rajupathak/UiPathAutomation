@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xiZXHUGulkm_PwZBfoqKxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="75, 284, 1843, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="2c2ae1a4-cc7e-4a34-b206-5ca5d3305c5f" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="75, 259, 126, 18" ElementType="Text" FriendlyName="'Community server'" FullSelectorArgument="&lt;wnd aaname='Community server:' cls='Static' title='&amp;amp;Community server:' /&gt;&lt;ctrl name='Community server:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Community server:' cls='Static' title='&amp;amp;Community server:' /&gt;&lt;ctrl name='Community server:' role='text' automationid='' check:text='Community server:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a7c6387dd416b49e12627a38ec3cd0fa.png" xmlns="">0LmiFFZrIW0-mZptDqYw5vA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

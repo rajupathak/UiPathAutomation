@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5r4SrOTbQUO_pOWvN85qWA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvElementArea="56, 47, 1821, 33" CvType="InputBox" DesignTimeRectangle="59, 49, 1810, 30" DesignTimeScaleFactor="1.25" FriendlyName="'Find a person'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='46' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' check:fulltext='Find a person' /&gt;" Guid="81a1e855-e482-40aa-8c23-272f2a03a8b2" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams403' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="67f044809ce64ac516cf53ba2a7da774.png" xmlns="">0I1MVtDJ37ki51660qyhS3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

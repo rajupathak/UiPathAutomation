@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IIM2TGIAIkCw2Nik13AIuw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvTextArea="123, 146, 75, 13" CvType="AnyWordGroup" DesignTimeRectangle="119, 143, 1746, 20" DesignTimeScaleFactor="1.25" FriendlyName="'I am available'" FullSelectorArgument="&lt;wnd cls='SWT_Window0' idx='11' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SWT_Window0' /&gt;" Guid="38f26f3f-2527-4f33-82ea-4ddd93d825e4" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect - adams555' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fff8521ff465e767cd2ad3177ea2d2a4.png" xmlns="">0Dmj5usttwUCuKJtU1ZQCuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

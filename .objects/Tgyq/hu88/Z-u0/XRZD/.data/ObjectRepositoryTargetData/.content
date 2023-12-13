@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d9Bwe3-OtkGZGRI9NNDXOw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvTextArea="88, 670, 84, 16" CvTextArgument="am available" CvType="Text" DesignTimeRectangle="75, 666, 1842, 29" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'I am available'" FullSelectorArgument="&lt;wnd cls='ComboBox' idx='2' /&gt;&lt;ctrl role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd cls='ComboBox' /&gt;&lt;ctrl role='combo box' automationid='' /&gt;" Guid="f46d26c8-66a9-4a22-86cd-b849d80acbe2" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bda73f7f467f8fd6ab80a34b32096b98.png" xmlns="">0B2wnmIuh7kyB5Onls3WngQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

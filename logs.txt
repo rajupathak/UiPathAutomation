@@ -1,0 +1,17 @@
+11/30/2023 12:05:25 => [Debug] Debug started for file: Main
+11/30/2023 12:05:26 => [Info] HClSametimeRobot execution started
+11/30/2023 12:05:27 => [Debug] Audit: Using Desktop App. App: C:\Program Files (x86)\HCL\Sametime Connect\rcp\eclipse\plugins\com.ibm.rcp.base_10.0.0.20220321-0904\win32\x86\sametime.exe Arguments:
+11/30/2023 12:05:45 => [Debug] UserStatusIs starting>>
+11/30/2023 12:05:47 => [Info] Verification passed. The expression 'DisplayName.Equals(CurrentRow("UserA").ToString)' returned 'True'.
+11/30/2023 12:05:47 => [Debug] PlaceholderValueIs--->Find a person
+11/30/2023 12:05:49 => [Info] Verification passed. The expression 'Placeholder.Equals("Find a person")' returned 'True'.
+11/30/2023 12:05:51 => [Info] Verification passed. The expression 'UserStatus.Equals(CurrentRow("Status").ToString)' returned 'True'.
+11/30/2023 12:06:00 => [Debug] UserB ->>>adams333 [started:
+11/30/2023 12:06:04 => [Info] Verification passed. The expression 'Receiver.Contains(CurrentRow("UserB").ToString)' returned 'True'.
+11/30/2023 12:06:05 => [Debug] UserB status is ->User is offline
+11/30/2023 12:06:06 => [Info] Verification passed. The expression 'UserBStatus.Equals("User is offline")' returned 'True'.
+11/30/2023 12:06:09 => [Debug] SendButtonText is ->>Send
+11/30/2023 12:06:32 => [Warning] [Anchor 1 ''Send'']: Could not find the UI element corresponding to this selector:
+<wnd cls='SWT_Window0' idx='367'/>
+11/30/2023 12:06:33 => [Info] Verification passed. The expression 'SendMessageText.Contains("Hi from this side UserA -->"+CurrentRow("UserA").ToString)' returned 'True'.
+11/30/2023 12:06:33 => [Info] HClSametimeRobot execution ended in: 00:01:07

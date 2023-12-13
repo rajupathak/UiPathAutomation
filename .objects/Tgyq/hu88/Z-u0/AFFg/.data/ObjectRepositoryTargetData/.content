@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="G_Z1RnC8ykOc211ESwiaYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvElementArea="1801, 913, 115, 32" CvTextArea="1836, 921, 42, 18" CvTextArgument="LogIn" CvType="Button" DesignTimeRectangle="1801, 915, 115, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Log &amp;In'" FullSelectorArgument="&lt;wnd aaname='Log In' cls='Button' title='Log &amp;amp;In' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Log In' cls='Button' title='Log &amp;amp;In' check:text='Log &amp;amp;In' /&gt;" Guid="dc6d4f17-1ad0-40ed-9807-4efe1092d85f" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='HCL Sametime Connect' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="65a540143cb2e3e346f372afa6fa5bad.png" xmlns="">0N-uCBzo3E0aJBx4loOk78w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

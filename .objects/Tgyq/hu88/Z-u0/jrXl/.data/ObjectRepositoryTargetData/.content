@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Mqcap-YTREKpM-N3L4wvQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvTextArea="321, 315, 344, 17" CvTextArgument="Hi from this side UserA --&gt;adams502 70fa99b4-" CvType="Text" DesignTimeRectangle="321, 315, 343, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Hi from'" Guid="c834577b-e3b0-41c4-9f55-0be34b4e6829" ScopeSelectorArgument="&lt;wnd app='sametime.exe' cls='SWT_Window0' title='adams502/pnp-hcl [started: 6:49:07 PM]' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fcdfb451d16830aed3c269fcca0c78a5.png" xmlns="">0Y2UIyV6Drk-QFyu3w5XyOQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
